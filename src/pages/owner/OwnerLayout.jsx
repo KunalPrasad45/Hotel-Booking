@@ -85,7 +85,7 @@ import { assets } from "../../assets/assets.js";
 import { Warehouse, CalendarArrowDown } from "lucide-react";
 
 const OwnerLayout = () => {
-  const { owner, setowner } = useContext(AppContext);
+  const { owner, setOwner } = useContext(AppContext);
 
   const dashboardicon = (
     <svg
@@ -114,7 +114,7 @@ const OwnerLayout = () => {
   ];
 
   const logout = async () => {
-    setowner(false);
+    setOwner(false);
     toast.success("Logout successfully");
   };
 
